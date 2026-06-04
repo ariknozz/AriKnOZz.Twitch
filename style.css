@@ -149,3 +149,56 @@ footer{padding:34px 6%;text-align:center;color:var(--muted);border-top:1px solid
   .hero-buttons .btn{width:100%}
   .section-head span{font-size:3rem}
 }
+
+
+/* Cartes réseaux avec logos */
+.socials{
+  grid-template-columns:repeat(5,1fr);
+}
+.social-card{
+  position:relative;
+  min-height:170px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  gap:6px;
+}
+.social-card svg{
+  position:absolute;
+  width:70px;
+  height:70px;
+  top:24px;
+  right:24px;
+  fill:white;
+  opacity:.95;
+  filter:drop-shadow(0 0 18px rgba(255,255,255,.25));
+  transition:.25s;
+}
+.social-card:before{
+  content:"";
+  position:absolute;
+  inset:auto -40% -70% -40%;
+  height:130px;
+  background:radial-gradient(circle,rgba(255,255,255,.28),transparent 65%);
+  transition:.25s;
+}
+.social-card:hover svg{
+  transform:scale(1.12) rotate(-4deg);
+}
+.social-card:hover:before{
+  transform:translateY(-22px);
+}
+.social-card.twitch{background:linear-gradient(160deg,rgba(145,70,255,.48),rgba(31,31,35,.88))}
+.social-card.tiktok{background:linear-gradient(160deg,rgba(0,242,234,.32),rgba(255,0,80,.25),rgba(31,31,35,.88))}
+.social-card.instagram{background:linear-gradient(160deg,rgba(245,96,64,.42),rgba(193,53,132,.34),rgba(131,58,180,.36))}
+.social-card.youtube{background:linear-gradient(160deg,rgba(255,0,0,.48),rgba(31,31,35,.88))}
+.social-card.discord{background:linear-gradient(160deg,rgba(88,101,242,.52),rgba(31,31,35,.88))}
+.social-card.discord svg{fill:#ffffff}
+
+@media(max-width:1150px){
+  .socials{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:620px){
+  .socials{grid-template-columns:1fr}
+}
