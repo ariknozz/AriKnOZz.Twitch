@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AriKnOZz — Twitch Live</title>
+  <meta name="description" content="Site officiel AriKnOZz : live Twitch, planning, clips, communauté et réseaux sociaux." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="aurora aurora-1"></div>
+  <div class="aurora aurora-2"></div>
+  <div class="scanlines"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#top">
+      <span class="logo-wrap">
+        <svg class="twitch-logo" viewBox="0 0 2400 2800" aria-hidden="true">
+          <path d="M500 0 0 500v1800h600v500l500-500h400l900-900V0H500zm1700 1300-400 400h-450l-400 400v-400H500V200h1700v1100z"/>
+          <path d="M1700 550h200v650h-200V550zm-550 0h200v650h-200V550z"/>
+        </svg>
+      </span>
+      <span>AriKnOZz</span>
+    </a>
+    <nav>
+      <a href="#live">Live</a>
+      <a href="#planning">Planning</a>
+      <a href="#clips">Clips</a>
+      <a href="#reseaux">Réseaux</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <div class="pill"><span></span> Twitch streamer • Gaming • Communauté</div>
+        <h1>Entre dans le stream<br><strong>AriKnOZz</strong></h1>
+        <p>
+          Un site complet pour suivre les lives, le chat, les clips, les horaires et tous les réseaux.
+          Ambiance Twitch, noir profond, violet néon et rendu professionnel.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-main" href="https://www.twitch.tv/ariknozz" target="_blank" rel="noopener">Regarder sur Twitch</a>
+          <a class="btn btn-ghost" href="#live">Voir le live ici</a>
+        </div>
+        <div class="stats">
+          <div><strong>LIVE</strong><span>Gaming</span></div>
+          <div><strong>CHAT</strong><span>Communauté</span></div>
+          <div><strong>CLIPS</strong><span>Best moments</span></div>
+        </div>
+      </div>
+
+      <div class="stream-card">
+        <div class="card-top">
+          <div class="red-dot"></div>
+          <span>STREAM PREVIEW</span>
+        </div>
+        <div class="screen">
+          <div class="screen-glow"></div>
+          <svg class="mega-logo" viewBox="0 0 2400 2800" aria-hidden="true">
+            <path d="M500 0 0 500v1800h600v500l500-500h400l900-900V0H500zm1700 1300-400 400h-450l-400 400v-400H500V200h1700v1100z"/>
+            <path d="M1700 550h200v650h-200V550zm-550 0h200v650h-200V550z"/>
+          </svg>
+          <h2>AriKnOZz</h2>
+          <p>Gameplay • Fun • Discussion</p>
+        </div>
+        <div class="chat-preview">
+          <p><b>Viewer_01</b> : Let’s go 🔥</p>
+          <p><b>AriFan</b> : Incroyable le stream</p>
+          <p><b>Mod</b> : Bienvenue à tous 💜</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="live" class="section">
+      <div class="section-head">
+        <span>01</span>
+        <div>
+          <p>Live Twitch</p>
+          <h2>Stream + chat intégrés</h2>
+        </div>
+      </div>
+
+      <div class="live-grid">
+        <div class="embed-box main-embed">
+          <div class="embed-title">Lecteur Twitch</div>
+          <iframe
+            src="https://player.twitch.tv/?channel=ariknozz&parent=localhost"
+            allowfullscreen>
+          </iframe>
+          <small>Remplace <b>parent=localhost</b> par ton domaine quand le site sera en ligne.</small>
+        </div>
+
+        <div class="embed-box">
+          <div class="embed-title">Chat Twitch</div>
+          <iframe
+            src="https://www.twitch.tv/embed/ariknozz/chat?parent=localhost">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="planning" class="section">
+      <div class="section-head">
+        <span>02</span>
+        <div>
+          <p>Planning</p>
+          <h2>Les prochains streams</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article>
+          <div class="day">Lundi</div>
+          <div class="time">20h00</div>
+          <h3>Gameplay chill</h3>
+          <p>Session détente, discussion et parties avec la communauté.</p>
+        </article>
+        <article class="featured">
+          <div class="day">Mercredi</div>
+          <div class="time">20h00</div>
+          <h3>Défis viewers</h3>
+          <p>Challenges, ranked, objectifs fun et moments imprévisibles.</p>
+        </article>
+        <article>
+          <div class="day">Vendredi</div>
+          <div class="time">21h00</div>
+          <h3>Soirée communauté</h3>
+          <p>Grosse ambiance, clips, fun et live plus long.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="clips" class="section clips-section">
+      <div class="section-head">
+        <span>03</span>
+        <div>
+          <p>Clips</p>
+          <h2>Meilleurs moments</h2>
+        </div>
+      </div>
+
+      <div class="clips-grid">
+        <article class="clip"><span>▶</span><h3>Clip #1</h3><p>Ajoute ton meilleur move ici.</p></article>
+        <article class="clip"><span>▶</span><h3>Clip #2</h3><p>Moment drôle ou clutch.</p></article>
+        <article class="clip"><span>▶</span><h3>Clip #3</h3><p>Best-of de la semaine.</p></article>
+      </div>
+    </section>
+
+    <section id="reseaux" class="section socials-section">
+      <div class="section-head">
+        <span>04</span>
+        <div>
+          <p>Réseaux</p>
+          <h2>Rejoins AriKnOZz partout</h2>
+        </div>
+      </div>
+
+      <div class="socials">
+        <a href="https://www.twitch.tv/ariknozz" target="_blank" rel="noopener"><b>Twitch</b><span>@ariknozz</span></a>
+        <a href="https://www.tiktok.com/@ariknozz_tv" target="_blank" rel="noopener"><b>TikTok</b><span>@ariknozz_tv</span></a>
+        <a href="https://www.instagram.com/ariknozz_tv" target="_blank" rel="noopener"><b>Instagram</b><span>@ariknozz_tv</span></a>
+        <a href="https://www.youtube.com/@ariknozz" target="_blank" rel="noopener"><b>YouTube</b><span>@ariknozz</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 AriKnOZz — Powered by Twitch vibes 💜</p>
+  </footer>
+</body>
+</html>
